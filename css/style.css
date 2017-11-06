@@ -6,7 +6,8 @@ body {
   color: seashell;
   opacity: 0.9;
   text-align: center;
-  margin: 0px;
+  margin: 0px; /* getting a weird display in chrome due to User Agent Stylesheet
+  setting, so I therefore over-wrote it here */
 }
 
 /* Flex Containers Styling */
@@ -14,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-border: 1px solid seashell;
+  border: 1px solid seashell;
 }
 
 div {
@@ -25,7 +26,7 @@ div {
 /* Header Styling*/
 header {
   width: 100%;
-   position: fixed;
+  position: fixed;
   z-index: 1;
   height: 69px;
   border-bottom: 1px solid seashell;
@@ -50,8 +51,8 @@ nav span {
 
 /* stylizing the links */
 a:link, a:visited, a:hover, a:active {
-    color: seashell;
-    text-decoration: underline;
+  color: seashell;
+  text-decoration: underline;
 }
 
 /* Main Body Styling */
@@ -69,12 +70,13 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .content {
-background-color: black;
+  background-color: black;
 }
 
 #featured {
   width: 1000px;
   margin: auto;
+  padding-bottom: 40px;
 }
 
 .content img {
@@ -92,4 +94,17 @@ background-color: black;
 .store {
   width: 300px;
   display: inline-block;
+}
+
+#locations {
+  height: 500px;
+  background-image: url("../resources/img-locations-background.jpg");
+  padding-top: 70px;
+}
+
+.location {
+  display: inline-block;
+  margin: 15px 40px;
+  width: 300px;
+  opacity: 1;
 }
