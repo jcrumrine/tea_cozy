@@ -1,0 +1,95 @@
+/* Default styling for the document */
+body {
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0px;
+}
+
+/* Flex Containers Styling */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+border: 1px solid seashell;
+}
+
+div {
+  display: block;
+
+}
+
+/* Header Styling*/
+header {
+  width: 100%;
+   position: fixed;
+  z-index: 1;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+  background-color: black;
+}
+
+header img {
+  height: 50px;
+  padding: 10px;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+nav span {
+  padding: 0px 10px;
+}
+
+/* stylizing the links */
+a:link, a:visited, a:hover, a:active {
+    color: seashell;
+    text-decoration: underline;
+}
+
+/* Main Body Styling */
+.main {
+  padding-top: 69px;
+  width: 1200px;
+  margin: auto;
+}
+
+#mission {
+  background-image: url(../resources/img-mission-background.jpg);
+  flex-direction: column;
+  height: 700px;
+
+}
+
+.content {
+background-color: black;
+}
+
+#featured {
+  width: 1000px;
+  margin: auto;
+}
+
+.content img {
+  height: 200px;
+  padding: 5px;
+}
+
+.content span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.store {
+  width: 300px;
+  display: inline-block;
+}
