@@ -7,7 +7,12 @@ body {
   opacity: 0.9;
   text-align: center;
   margin: 0px; /* getting a weird display in chrome due to User Agent Stylesheet
-  setting, so I therefore over-wrote it here */
+  setting, so I over-wrote it here */
+}
+
+/* Define all div's as blocks by default */
+div {
+  display: block;
 }
 
 /* Flex Containers Styling */
@@ -15,12 +20,6 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid seashell;
-}
-
-div {
-  display: block;
-
 }
 
 /* Header Styling*/
@@ -62,21 +61,9 @@ a:link, a:visited, a:hover, a:active {
   margin: auto;
 }
 
-#mission {
-  background-image: url(../resources/img-mission-background.jpg);
-  flex-direction: column;
-  height: 700px;
-
-}
-
+/* Content Class Styling */
 .content {
   background-color: black;
-}
-
-#featured {
-  width: 1000px;
-  margin: auto;
-  padding-bottom: 40px;
 }
 
 .content img {
@@ -91,9 +78,34 @@ a:link, a:visited, a:hover, a:active {
   text-align: center;
 }
 
+/* store class styling */
 .store {
   width: 300px;
   display: inline-block;
+}
+
+/* contact class styling */
+.contact {
+  height: 200px;
+}
+
+/* copyright class styling */
+.copyright {
+  margin: 20px;
+  text-align: left;
+}
+
+/* Different Sections Styling */
+#mission {
+  background-image: url(../resources/img-mission-background.jpg);
+  flex-direction: column;
+  height: 700px;
+}
+
+#featured {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 40px;
 }
 
 #locations {
@@ -102,9 +114,8 @@ a:link, a:visited, a:hover, a:active {
   padding-top: 70px;
 }
 
-.location {
-  display: inline-block;
+/* Additional styling for the store class within the location id */
+#locations .store {
   margin: 15px 40px;
-  width: 300px;
   opacity: 1;
 }
