@@ -91,6 +91,8 @@ a:link, a:visited, a:hover, a:active {
 
 /* copyright class styling */
 .copyright {
+display: block;
+  width: 100%;
   margin: 20px;
   text-align: left;
 }
@@ -118,4 +120,9 @@ a:link, a:visited, a:hover, a:active {
 #locations .store {
   margin: 15px 40px;
   opacity: 1;
+}
+
+footer {
+  text-align: left;
+  padding-left: 20px;
 }
